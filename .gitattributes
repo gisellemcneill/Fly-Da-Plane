@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Unity window saved layout files (.wlt) show the same as Wolfram Language
+# This will stop GitHub from detecting them as a programming language and 
+# showing them in the language stats
+*.wlt linguist-detectable=false
