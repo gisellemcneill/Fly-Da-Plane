@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem; //Added this for input on Xbox Controller
 
 /// <summary>
 /// I did some testing and found a solution. When the plane collides the physics engine 
@@ -27,6 +28,14 @@ public class PlayerControllerX : MonoBehaviour
     {
         // get the user's vertical input
         verticalInput = Input.GetAxis("Vertical");
+
+       if(Gamepad.current != null)
+        {
+            float leftStick = Gamepad.current.leftStick.ReadValue().y;
+            verticalInput += leftStick;
+        }
+
+        verticalInput = Mathf.Clamp(verticalInput, -1f, 1f);
 
         // move the plane forward at a constant rate
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
