@@ -1,7 +1,7 @@
 # Fly-Da-Plane
 ## You want to fly DA plane? 
 
-<img src="https://media1.tenor.com/m/G7RCgbI7ypMAAAAC/airplane-dancing.gif" width="400">
+<img src="https://gifdb.com/images/thumbnail/funny-plane-flapping-its-wings-like-a-bird-43slou6hu0bi6an9.gif" width="400">
 
 C# Tutorial on Unity
 Accepts input from the player.
